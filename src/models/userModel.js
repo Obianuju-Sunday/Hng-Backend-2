@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const PersonSchema = new mongoose.Schema(
+const personSchema = new mongoose.Schema(
 	{
 		name: { 
 			type: String,
@@ -11,13 +11,12 @@ const PersonSchema = new mongoose.Schema(
 			unique: true, 
 			required: true 
 		},
-		// password: { type: String },
 	},
 	{
 		timestamps: true,
 	}
 );
 
-const Person = mongoose.model("Person", PersonSchema);
+const Person = mongoose.model("Person", personSchema);
 
 module.exports = Person;

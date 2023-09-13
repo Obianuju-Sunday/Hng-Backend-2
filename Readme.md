@@ -14,10 +14,8 @@ This Node.js CRUD API project is designed to provide a simple and flexible way t
 - [Usage](#usage)
   - [Database](#database)
   - [API Endpoints](#api-endpoints)
-- [Testing](#testing)
+- [UML Diagram](#uml-diagram)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -139,7 +137,10 @@ DELETE http://localhost:3000/api/user_id
 Expected Result: 
 You will get a message that the person with that id has been deleted from the database.
 
+### UML Diagram
+Link :
 
+https://lucid.app/lucidchart/4bef2422-3ab9-4f74-86ab-6e8940ab578b/edit?viewport_loc=-11205%2C-3690%2C15598%2C7741%2C0_0&invitationId=inv_869e03d0-1062-48ae-bbe8-8a50e88b2f59
 
 
 ### Documentation

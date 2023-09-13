@@ -7,7 +7,6 @@ Router.get('/:user_id', async (req, res) => {
     try {
         const data = await Model.findById(req.params.user_id) 
 
-
         res.json(data)
     } catch (error) {
         res.status(500).json({message: error})

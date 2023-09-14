@@ -167,7 +167,7 @@ pm.test("Response body is valid json", function () {
 });
 ```
 #### Response from postman
-![Alt Text] (https://github.com/Obianuju-Sunday/Hng-Backend-2/blob/5ffa8e5071ee778d689fd3dd07c6f676729b9e29/Screenshot%20from%202023-09-14%2020-11-07.png)
+![Create-response] (create-response.png)
 
 
 

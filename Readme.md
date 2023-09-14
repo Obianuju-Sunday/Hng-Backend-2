@@ -167,10 +167,67 @@ pm.test("Response body is valid json", function () {
 });
 ```
 #### Response from postman
-![Create-response] (create-response.png)
+PASS
+  ----------Status code is 200 Created
+
+PASS
+----------Response body is valid json
 
 
+#### Script to get every person in the database
+```
+// Test script for creating a person
+pm.test("Status code is 200 Created", function () {
+    pm.response.to.have.status(200);
+});
 
+pm.test("Response body is valid json", function () {
+    pm.response.to.be.json;
+});
+```
+#### Response from postman
+PASS
+  ----------Status code is 200 Created
+
+PASS
+----------Response body is valid json
+
+#### Script to update details of new person
+```
+// Test script for updating a person
+pm.test("Status code is 200 Created", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response means user details has been updated", function () {
+    pm.response.to.be.json;
+});
+
+```
+#### Response from postman
+PASS
+  ----------Status code is 200 Created
+
+PASS
+----------Response means user details has been updated
+
+#### Script to delete a person
+```
+// Test script for deleting a person by ID
+pm.test("Status code is 200 OK", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response message indicates successful deletion", function () {
+    pm.expect(pm.response.text()).to.include("Deleted");
+});
+```
+#### Response from postman
+PASS
+  ----------Status code is 200 Created
+
+PASS
+----------Response message indicates successful deletion
 
 ### Technologies Used
 * [NodeJS](https://nodejs.org/) This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.

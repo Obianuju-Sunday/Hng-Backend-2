@@ -14,8 +14,12 @@ This Node.js CRUD API project is designed to provide a simple and flexible way t
 - [Usage](#usage)
   - [Database](#database)
   - [API Endpoints](#api-endpoints)
+<<<<<<< HEAD
 - [Testing](#testing)
 - [Technologies Used](#technologies-used)
+=======
+- [UML Diagram](#uml-diagram)
+>>>>>>> origin/main
 - [Documentation](#documentation)
 
 ## Introduction

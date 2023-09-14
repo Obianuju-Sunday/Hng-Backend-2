@@ -167,7 +167,7 @@ pm.test("Response body is valid json", function () {
 });
 ```
 #### Response from postman
-![Create-response] (create-response.png)
+![create-response] (create-response.png)
 
 
 

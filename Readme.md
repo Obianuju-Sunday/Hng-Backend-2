@@ -62,7 +62,7 @@ npm install
 ```
 ##### 4. Start the server
 ```
-npm run dev
+npm start
 ```
 
 The server should be running on 

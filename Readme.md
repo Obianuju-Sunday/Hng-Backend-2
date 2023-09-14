@@ -100,7 +100,7 @@ The new person is created, and you will receive a JSON response with the person'
 ### Read
 Endpoint:  GET /api/
 
-Description: Gets details of person in the database.
+Description: Gets details of every person in the database.
 
 Example:
 ```
@@ -109,6 +109,7 @@ GET http://localhost:3000/api/
 Expected Result: 
 
 You will receive a JSON response with every person's information.
+
 ### Read
 Endpoint:  GET /api/:user_id
 
@@ -173,7 +174,7 @@ PASS
 
 #### Script to get every person in the database
 ```
-// Test script for creating a person
+// Test script for getting every person
 pm.test("Status code is 200 Created", function () {
     pm.response.to.have.status(200);
 });
@@ -188,6 +189,25 @@ PASS
 
 PASS
 ----------Response body is valid json
+
+#### Script to get a single person by id 
+```
+// Test script to get a single person by id 
+pm.test("Status code is 200 Created", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response body is valid json", function () {
+    pm.response.to.be.json;
+});
+```
+#### Response from postman
+PASS
+  ----------Status code is 200 Created
+
+PASS
+----------Response body is valid json
+
 
 #### Script to update details of new person
 ```

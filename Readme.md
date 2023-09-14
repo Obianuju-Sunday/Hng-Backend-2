@@ -1,7 +1,7 @@
 
 # Node.js CRUD API Documentation
 
-This Node.js CRUD API project is designed to provide a simple and flexible way to perform CRUD (Create, Read, Update, Delete) operations on a "person" resource. This documentation will guide you through setting up, using, and understanding the API including the standard formats of requests and responses.
+This Node.js CRUD API project is designed to provide a simple and flexible way to perform CRUD (Create, Read, Update, Delete) operations on a "person" resource. This documentation will guide you through setting up, using, and understanding the API.
 
 
 ## Table of Contents
@@ -15,9 +15,8 @@ This Node.js CRUD API project is designed to provide a simple and flexible way t
   - [Database](#database)
   - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
+- [Technologies Used](#technologies-used)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -97,6 +96,21 @@ Request Body:
 The new person is created, and you will receive a JSON response with the person's details including the time created and the unique id.
 
 ### Read
+
+Endpoint:  GET /api/getAll
+
+Description: Gets details of every person in the database.
+
+Example:
+```
+GET http://localhost:3000/api/getAll
+```
+Expected Result: 
+
+You will receive a JSON response with every person's information.
+
+
+### Read
 Endpoint:  GET /api/:user_id
 
 Description: Gets details of a single person by id.
@@ -108,7 +122,6 @@ GET http://localhost:3000/api/user_id
 Expected Result: 
 
 You will receive a JSON response with the person's information.
-
 
 ### Update
 Endpoint: PATCH /api/:user_id
@@ -139,13 +152,16 @@ DELETE http://localhost:3000/api/user_id
 Expected Result: 
 You will get a message that the person with that id has been deleted from the database.
 
-### UML Diagram
-Link :
-
-https://lucid.app/lucidchart/4bef2422-3ab9-4f74-86ab-6e8940ab578b/edit?viewport_loc=-11205%2C-3690%2C15598%2C7741%2C0_0&invitationId=inv_869e03d0-1062-48ae-bbe8-8a50e88b2f59
+### Technologies Used
+* [NodeJS](https://nodejs.org/) This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.
+* [ExpressJS](https://www.expresjs.org/) This is a NodeJS web application framework.
+* [MongoDB](https://www.mongodb.com/) This is a free open source NOSQL document database with scalability and flexibility. Data are stored in flexible JSON-like documents.
+* [Mongoose ODM](https://mongoosejs.com/) This makes it easy to write MongoDB validation by providing a straight-forward, schema-based solution to model to application data.
 
 
 ### Documentation
  Link to Postman Published Documentation
 
 https://documenter.getpostman.com/view/22989155/2s9YC4Ut9u
+
+![Response-postman](/home/joyobianuju/Desktop/HNG-2023/Backend-2/Screenshot from 2023-09-14 20-11-07.png)

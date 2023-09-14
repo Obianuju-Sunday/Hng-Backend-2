@@ -1,6 +1,16 @@
 const express = require('express');
 const Model = require('../models/userModel')
 const Router = express.Router();
+
+// GET ALL API
+Router.get('/getAll', async (req, res) => {
+    try { 
+        const data = await Model.find()
+        res.json(data)
+    } catch (error) {
+        res.status(500).json({message: error.message})
+    }
+})
  
 // GET BY ID API
 Router.get('/:user_id', async (req, res) => {
@@ -23,7 +33,7 @@ Router.post('/post', async (req, res) => {
     try {
         const dataToSave = await data.save()
         res.status(200).json(dataToSave)
-    } catch (error) {
+    } catch (error) { 
         res.status(501).json({message: error.message})
     }
 })

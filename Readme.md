@@ -98,6 +98,18 @@ Request Body:
 The new person is created, and you will receive a JSON response with the person's details including the time created and the unique id.
 
 ### Read
+Endpoint:  GET /api/
+
+Description: Gets details of person in the database.
+
+Example:
+```
+GET http://localhost:3000/api/
+```
+Expected Result: 
+
+You will receive a JSON response with every person's information.
+### Read
 Endpoint:  GET /api/:user_id
 
 Description: Gets details of a single person by id.

@@ -167,8 +167,7 @@ pm.test("Response body is valid json", function () {
 });
 ```
 #### Response from postman
-![Alt Text]
-(Screenshot from 2023-09-14 20-11-07.png)
+![Alt Text] (Screenshot from 2023-09-14 20-11-07.png)
 
 
 

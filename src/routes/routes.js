@@ -3,7 +3,7 @@ const Model = require('../models/userModel')
 const Router = express.Router();
 
 // GET ALL API
-Router.get('/getAll', async (req, res) => {
+Router.get('/', async (req, res) => {
     try { 
         const data = await Model.find()
         res.json(data)

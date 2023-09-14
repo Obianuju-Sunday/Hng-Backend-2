@@ -14,12 +14,9 @@ This Node.js CRUD API project is designed to provide a simple and flexible way t
 - [Usage](#usage)
   - [Database](#database)
   - [API Endpoints](#api-endpoints)
-<<<<<<< HEAD
 - [Testing](#testing)
 - [Technologies Used](#technologies-used)
-=======
 - [UML Diagram](#uml-diagram)
->>>>>>> origin/main
 - [Documentation](#documentation)
 
 ## Introduction
@@ -31,6 +28,7 @@ This Node.js CRUD API project is designed to provide a simple and flexible way t
 
 - CRUD Operations
 - UML Diagram
+- Automated test script
 
 ## Getting Started
 
@@ -156,16 +154,38 @@ DELETE http://localhost:3000/api/user_id
 Expected Result: 
 You will get a message that the person with that id has been deleted from the database.
 
+### Testing Script
+#### Script to create a new person
+```
+// Test script for creating a person
+pm.test("Status code is 200 Created", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response body is valid json", function () {
+    pm.response.to.be.json;
+});
+```
+#### Response from postman
+![Alt Text]
+
+(/home/joyobianuju/Desktop/HNG-2023/Backend-2/Screenshot from 2023-09-14 20-11-07.png)
+
+
+
+
 ### Technologies Used
 * [NodeJS](https://nodejs.org/) This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.
 * [ExpressJS](https://www.expresjs.org/) This is a NodeJS web application framework.
 * [MongoDB](https://www.mongodb.com/) This is a free open source NOSQL document database with scalability and flexibility. Data are stored in flexible JSON-like documents.
 * [Mongoose ODM](https://mongoosejs.com/) This makes it easy to write MongoDB validation by providing a straight-forward, schema-based solution to model to application data.
 
+### UML Diagram
+Link :
+
+https://lucid.app/lucidchart/4bef2422-3ab9-4f74-86ab-6e8940ab578b/edit?viewport_loc=-11205%2C-3690%2C15598%2C7741%2C0_0&invitationId=inv_869e03d0-1062-48ae-bbe8-8a50e88b2f59
 
 ### Documentation
  Link to Postman Published Documentation
 
 https://documenter.getpostman.com/view/22989155/2s9YC4Ut9u
-
-![Response-postman](/home/joyobianuju/Desktop/HNG-2023/Backend-2/Screenshot from 2023-09-14 20-11-07.png)
